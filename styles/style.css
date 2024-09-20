@@ -45,6 +45,18 @@ ol {
   padding: 133px 30px;
 }
 
+.result__video-container {
+  inline-size: 711px;
+  block-size: 386px;
+  margin-block-end: 16px;
+}
+
+.result__video {
+  block-size: inherit;
+  inline-size: inherit;
+  object-fit: contain;
+}
+
 .search-form {
   display: flex;
   justify-content: space-between;
@@ -57,6 +69,25 @@ ol {
 }
 
 .content__list {
-  max-height: 298px;
-  overflow: scroll;
+  max-block-size: 298px;
+  overflow: auto;
+}
+
+.content__list-item {
+  margin-block-end: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  align-items: start;
+}
+
+.content__video-card-description-container {
+  inline-size: 100%;
+}
+
+.content__video-card-thumbnail{
+  inline-size: 194px;
+  block-size: 103px;
+  object-fit: contain;
 }
