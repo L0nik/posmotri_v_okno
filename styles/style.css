@@ -74,11 +74,124 @@ ol {
   align-items: start;
 }
 
+.search-form__fieldset {
+  border: none;
+}
+
 .search-form__fieldset-title {
+  margin-block-end: 5px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
   font-size: 18px;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__label {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #FFF;
+  outline-offset: 1px;
+}
+
+.search-form__label:has(.search-form__textfield:active) {
+  outline: 1px solid #FFF;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  block-size: 19px;
+  inline-size: 19px;
+  border: 1px solid #FFF;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox:after {
+  content: "";
+  display: inline-block;
+  block-size: 15px;
+  inline-size: 15px;
+  background: #FFF;
+  margin-left: 1px;
+  margin-bottom: 1px;
+}
+
+.search-form__label:hover:has(.search-form__checkbox) {
+  text-decoration: underline;
+}
+
+.search-form__label-text {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.search-form__textfield {
+  appearance: none;
+  padding: 2px 0;
+  inline-size: 225px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(255 255 255 / 0.7);
+  background-color: inherit;
+  border-block: 1px solid #FFF;
+  border-inline: none;
+  outline: none;
+}
+
+.button {
+  block-size: 34px;
+  padding: 0;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFF;
+  background-color: inherit;
+  border: 1px solid #FFF;
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #FFF;
+  outline-offset: 1px;
+}
+
+.search-form__submit-button {
+  align-self: end;
+  inline-size: 194px;
+}
+
+.more-button {
+  inline-size: 100%;
 }
 
 .content__details {
@@ -114,6 +227,7 @@ ol {
 .content__card-link {
   text-decoration: none;
   color: #FFF;
+  cursor: pointer;
 }
 
 .content__video-card {
