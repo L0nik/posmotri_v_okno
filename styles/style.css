@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: flex;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -52,7 +53,7 @@ ol {
   gap: 30px;
   justify-content: center;
   align-items: end;
-  padding: 133px 30px;
+  margin: auto;
 }
 
 .result__video-container {
