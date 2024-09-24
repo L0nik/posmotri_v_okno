@@ -66,7 +66,8 @@ ol {
 .result__video {
   block-size: inherit;
   inline-size: inherit;
-  object-fit: contain;
+  object-position: center;
+  object-fit: cover;
 }
 
 .search-form {
@@ -202,7 +203,7 @@ ol {
 
 .title {
   margin-block-end: 26px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 75px;
@@ -217,7 +218,7 @@ ol {
 
 .content__list {
   position: relative;
-  max-block-size: 298px;
+  block-size: 298px;
   overflow: auto;
 }
 
@@ -263,7 +264,7 @@ ol {
 
 .content__video-card-title {
   margin-block-end: 6px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -279,6 +280,5 @@ ol {
 
 .content__video-card-thumbnail{
   inline-size: 194px;
-  block-size: 103px;
-  object-fit: contain;
+  object-fit: cover;
 }
